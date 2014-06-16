@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>magelangsoft.com - Projects| Notes</title>
+    <meta charset="utf-8">
+    <meta name="keywords" content="HTML, HTML5, CSS, Bootstrap, Javascript">
+    <meta name="description" content="Notes Application uses Web Storage API for saving its data. So, when you create a Note, it will be stored only in your local browser. You can also download and see the code in my github page.">
+    <link rel="stylesheet" href="assets/bootstrap-3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="assets/js/utils.js"></script>
+    <script src="assets/js/editor.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/window_onload.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/constructors.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/handler.js"></script>
+    <script src="js/views.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Notes</h1>
+      <div>
+        <ul class="nav nav-tabs">
+          <li id="main_menu_add_note" title="Add New Note">
+            <a href="#">
+              <img class="icons" src="assets/images/icons/add.png">
+            </a>
+          </li>
+          <li id="main_menu_the_notes" title="All Notes">
+            <a href="#">
+              <img class="icons" src="assets/images/icons/lists.png">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div id="add_note" class="row">
+        <div class="col-xs-10 col-sm-8 col-xs-offset-1 col-sm-offset-2">
+          <form id="form_note" class="form_note" role="form">
+            <div class="form-group">
+              <input id="input_text_title" type="text" class="form-control" placeholder="Plan's title" required autofocus>
+              <textarea id="textarea_text" class="form-control" rows="13" spellcheck="false" placeholder="Write some text here..." required></textarea>
+              <select id="select_size" class="form-control" required>
+                <option value="" selected disabled>select size</option>
+                <option value="1">Big</option>
+                <option value="2">Middle</option>
+                <option value="3">Small</option>
+              </select>
+            </div>
+            <div id="form_group_create" class="form-group">
+              <input id="input_button_create" type="button" class="form-control btn btn-primary" value="create">
+            </div>
+            <div id="form_group_edit" class="form-group">
+              <div class="outer_update_btn_group">
+                <div class="btn-group">
+                  <button id="button_new" type="button" class="btn btn-default">New</button>
+                  <button id="button_update" type="button" class="btn btn-default">Update</button>
+                  <button id="button_cancel" type="button" class="btn btn-default">Cancel</button>
+                  <input id="input_text_edit_hidden" type="hidden" style="display: none;">
+                </div> 
+              </div>
+            </div>
+            <input id="input_submit_hidden" type="submit">
+          </form>
+        </div>
+      </div>
+      <div id="the_notes" class="row"></div>
+    </div>
+  </body>
+</html>

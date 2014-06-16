@@ -1,0 +1,70 @@
+.form_note, .notes{
+  margin-top: 25px;
+}
+#input_text_title{
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+#textarea_text{
+  border-radius: 0;
+}
+#select_size{
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.note_title{
+  border-bottom: 1px solid #ccc;
+}
+#add_note, #the_notes, #input_submit_hidden, #form_group_edit{
+  display: none;
+}
+select option {
+  color: black;
+}
+select option:first-child {
+  color: grey;
+}
+select.empty {
+  color: grey;
+}
+/* Hidden placeholder */
+select option[disabled]:first-child {
+  display: none;
+}
+textarea.form-control{
+  font-family: Ubuntu mono;
+  font-size: 12px;
+  resize: vertical;
+}
+.outer_update_btn_group{
+  text-align: center;
+}
+.icons{
+  width: 24px;
+  cursor: pointer;
+}
+.icons_smaller{
+  width: 16px;
+  cursor: pointer;
+}
+
+.note_button_group{
+  width: 100%;
+  display: table;
+  visibility: hidden;
+}
+.note_button_left{
+  display: table-cell;
+  text-align: left;
+}
+.note_button_right{
+  display: table-cell;
+  text-align: right;
+}
+
+.well:hover div.note_button_group{
+  visibility: visible;
+}
+.well{
+  padding-top: 0;
+}
